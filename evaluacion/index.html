@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de N Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Suma de N Números</h1>
+        <label for="count">¿Cuántos números deseas sumar?</label>
+        <input type="number" id="count" min="1" required>
+        <button id="generate">Generar campos</button>
+        
+        <div id="numberFields" class="number-fields"></div>
+        
+        <button id="calculate" style="display:none;">Calcular Suma</button>
+        
+        <h2 id="result" style="display:none;"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
