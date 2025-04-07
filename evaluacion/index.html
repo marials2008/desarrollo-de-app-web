@@ -1,26 +1,46 @@
-<!DOCTYPE html>            
+<!DOCTYPE html>
+<!-- Declara el tipo de documento como HTML5 -->
 <html lang="es">
+<!-- Indica que el contenido de la página está en español (idioma del documento) -->
+
 <head>
     <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8, que soporta caracteres especiales como acentos y ñ -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajusta el tamaño de la página en dispositivos móviles para que se vea correctamente al adaptarse al ancho de la pantalla -->
+    
     <title>Suma de N Números</title>
+    <!-- Título de la página que se muestra en la pestaña del navegador -->
+    
     <link rel="stylesheet" href="style.css">
+    <!-- Vincula el archivo CSS externo (style.css) para aplicar los estilos a la página -->
 </head>
+
 <body>
     <div class="container">
+    <!-- Crea un contenedor principal que agrupa todos los elementos dentro de un bloque para darle estilo -->
+
         <h1>Suma de N Números</h1>
+        <!-- Título principal de la página que le dice al usuario el propósito del sitio -->
+
         <label for="count">¿Cuántos números deseas sumar?</label>
+        <!-- Etiqueta que describe el campo de entrada para que el usuario indique cuántos números quiere sumar. 
+             El atributo "for" asocia esta etiqueta con el input con id="count" -->
+
         <input type="number" id="count" min="1" required>
+        <!-- Campo de entrada donde el usuario escribe la cantidad de números que desea sumar.
+             "type='number'" garantiza que solo se puedan ingresar números. "min='1'" asegura que el número ingresado sea al menos 1, y "required" hace que este campo sea obligatorio -->
+
         <button id="generate">Generar campos</button>
-        
+        <!-- Botón que, al hacer clic, generará los campos de entrada para que el usuario ingrese los números a sumar.
+             El atributo "id='generate'" lo vincula con el código JavaScript para poder darle funcionalidad -->
+
         <div id="numberFields" class="number-fields"></div>
+        <!-- Contenedor vacío que se usará para insertar los campos de entrada dinámicos. El contenido de este div se genera con JavaScript
+             El id "numberFields" permite manipular este elemento desde el script -->
         
         <button id="calculate" style="display:none;">Calcular Suma</button>
-        
-        <h2 id="result" style="display:none;"></h2>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+        <!-- Botón oculto inicialmente (por la propiedad "style='display:none-->
 
 <!--maria-->
