@@ -1,0 +1,76 @@
+/* Elimina el relleno y margen predeterminados de todos los elementos */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo general del cuerpo */
+body {
+    background-color: rgb(253, 246, 237);
+}
+
+/* Estilo del encabezado: fondo azul oscuro, centrado y vertical */
+header {
+    background-color: rgb(52, 73, 94); 
+    display: flex;
+    flex-wrap: wrap; /*elementos flexibles, dentro de un contenedor flexible*/
+    height: 20vh; /* 20% de la altura de la ventana */
+    flex-direction: column;/*se deben ordenar verticalmente, uno debajo del otro, como una lista*/
+    align-items: center;
+    justify-content: center; /*alinea los elementos hijos */
+}
+
+/* Contenedor principal: fondo blanco, bordes redondeados, espaciado interno y externo */
+.container {
+    display: flex;
+    background-color: white;
+    border-radius: 4vh;/*redondea las esquinas */
+    padding: 6vh;
+    margin: 10vh;
+    flex-direction: column;
+}
+
+/* Texto grande blanco con fuente personalizada */
+.letra_grande {
+    color: white;
+    font-family: "Ancizar Sans", sans-serif;
+}
+
+/* Caja naranja clara con contenido centrado y bordes redondeados */
+.caja_naranja {
+    background-color: rgb(230, 126, 34);
+    border-radius: 2vh;
+    height: 18vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5vh; /*espacio entre uno elemento de abajo*/
+}
+
+/* Contenedor para ubicar cajas en la parte superior, usando flexbox */
+.caja_arriba {
+    display: flex;
+}
+
+/* Contenedor general para agrupar varias cajas con espacio entre ellas */
+.cajas {
+    gap: 4vh; /*ddefine el espacio de un contenedor, en dispo cuadratica*/
+    display: flex;
+}
+
+/* Cajas naranjas oscuras con diseño centrado, texto centrado y tamaño definido */
+.cajas_naranjo_oscuro {
+    background-color: rgb(212, 84, 0); 
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vh;
+    width: 62vh;
+    text-align: center; /* Alineación de texto centrada */
+}

@@ -1,0 +1,50 @@
+*{
+    paddin:0;
+    padding:0;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+section{
+    width: 105vh;
+    margin: 0 auto;
+}
+
+.top{
+    background-color: rgb(91, 91, 236);
+}
+
+.gift{
+    background-color: rgb(252, 85, 85);
+    justify-content: space-around;
+}
+
+.item{
+    width: 25vh;
+    height: 25vh;
+    margin: 3vh;
+}
+
+/*libre*/
+
+.top1{
+    background-color: aquamarine;
+
+}
+
+.gift2{
+    background-color: aqua;
+    justify-content: space-around;
+}
+
+.bottom2{
+    background-color: pink;
+}
+
+.row{
+    width: 95vh;
+    margin: 5vh;
+    display: flex;
+}
