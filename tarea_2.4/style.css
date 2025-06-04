@@ -12,3 +12,16 @@
     height: 700px;
     flex:1
 }
+
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: #b2b5b4;
+}
+.cuadrado2{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: #b2b5b4;
+}
