@@ -30,16 +30,27 @@ body {
 
 .nav ul {
     list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .nav li {
     margin: 10px 0;
+    position: relative;
+    list-style: none;
 }
 
 .nav a {
     text-decoration: none;
     color: white;
-    transition: 0.3s;
+    transition: 1s;
+    position: relative;
+    width: 0;
+    color: var(--clr);
+    overflow: hidden;
+    border-right: 8px solid var(--clr);
 }
 
 .nav a:hover {

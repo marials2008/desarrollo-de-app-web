@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     outline: solid 1px red;
+    flex-shrink: 0; 
 }
 
 body{
@@ -110,3 +111,68 @@ body{
 }
 
 /*derecha */
+.subRightSon{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.subRightSonx2Two{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.subdiviRight{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    gap: 4vh;
+    padding: 3vh;
+}
+
+.subdiviRightSon{
+    display: flex;
+    flex: 2;
+    gap: 4vh;
+    padding: 3vh;   
+}
+
+.subRight{
+    display: flex;
+    gap: 4vh;
+    padding: 3vh;
+    flex-direction: column;
+}
+/*Items derecha*/
+
+.one{
+    width: 49vh;
+    height: 50vh;
+    margin: 3vh;
+}
+
+.two{
+    width: 20vh;
+    height: 20vh;
+}
+
+.three{
+    width: 20vh;
+    height: 20vh;
+}
+
+.four{
+    height: 30vh;
+    width: 30vh;
+}
+
+.five{
+    width: 46vh;
+    height: 23vh;
+}
+
+.six{
+    width: 46vh;
+    height: 66vh;
+}
