@@ -12,89 +12,135 @@ body {
 .contenedor {
     display: flex;
     height: 100vh;
+
 }
 
 /* NAV */
 .nav {
-    background-color: #37474f;
+    background: linear-gradient( #20115b, #5028a0);
     color: white;
-    min-width: 200px;
-    flex: 1;
-    max-width: 300px;
-    padding: 20px;
+    min-width: 220px;
+    max-width: 280px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.3);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo-img {
+    width: 45px; /* antes 60px */
+    height: 45px;
+    margin-bottom: 10px;
 }
 
 .nav h2 {
     margin-bottom: 20px;
+    font-size: 22px;
 }
 
 .nav ul {
     list-style: none;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
 }
 
 .nav li {
-    margin: 10px 0;
-    position: relative;
-    list-style: none;
+    margin: 15px 0;
 }
 
 .nav a {
     text-decoration: none;
     color: white;
-    transition: 1s;
-    position: relative;
-    width: 0;
-    color: var(--clr);
-    overflow: hidden;
-    border-right: 8px solid var(--clr);
+    font-size: 16px;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
 .nav a:hover {
-    color: #ffd54f;
+    background-color: #00ffc8;
+    color: #20115b;
 }
 
 /* CONTENIDO */
 .contenido {
     flex: 4;
     padding: 30px;
+    background: linear-gradient(to right, #010108, #2a094b);
+    color: #ffffff;
+    overflow-y: auto;
+}
+
+.imagen1 {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.25);
+     max-width: 150px; /* antes 200px */
 }
 
 .galeria {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 20px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* imagen y resumen lado a lado */
+    grid-template-rows: auto auto;
 }
 
 .tarjeta {
-    padding: 30px;
-    border-radius: 10px;
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: 0 0 10px rgba(120, 9, 224, 0.4);
     transition: transform 0.3s ease;
+    flex-grow: 1;
+    min-width: 180px; /* reducido de 220px */
+    max-width: 250px; /* límite para achicar más */
 }
 
 .tarjeta:hover {
     transform: scale(1.05);
 }
 
+.tarjeta h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #5028a0;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
 /* Proporciones */
 .grande {
-    flex: 3;
-    background-color: #ffd54f;
+    flex: 2;
+    background-color: #d2c2f2;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .mediana {
-    flex: 2;
-    background-color: #4fc3f7;
+    flex: 1.5;
+    background-color: #e4cbff;
+    grid-column: 2;
+    grid-row: 1;
 }
 
 .pequeña {
     flex: 1;
-    background-color: #81c784;
+    background-color: #fde1f0;
 }
+
