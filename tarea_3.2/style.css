@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 40px;
+}
+
+.card {
+    border: 2px solid black;
+    padding: 16px;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.user {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.likes {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.like-button {
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 4px 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.note {
+    background-color: #fef3a3;
+    padding: 12px;
+    border-left: 5px solid red;
+    width: 240px;
+}
