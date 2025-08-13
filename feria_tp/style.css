@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: solid red;
+}
+
+body {
+    background: linear-gradient(180deg, #212779 35%, #0c5fdd 100%);
+    font-family: sans-serif;
+}
+
+*::-webkit-scrollbar {
+    width: 2vh;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 15px;
+    border: 3px solid transparent;
+}
+
+/* --------------------- NAVIGATION --------------------- */
+
+nav {
+    width: 100%;
+    background: linear-gradient(100deg, #212779 35%, #0c5fdd 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 2vh;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 1vh 0;
+}
+
+nav li {
+    margin: 1vh 2vh;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+nav button {
+    font-size: 2.5vh;
+    background: transparent;
+    box-shadow: 5px 5px #141414;
+    padding: 1vh 2vh;
+    border: 2px solid #1f1f1f;
+    color: white;
+    font-weight: bold;
+    border-radius: 1vh;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+/* --------------------- HEADER --------------------- */
+
+header {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('img/Hologramacasa.png');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 5vh;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* --------------------- MAIN CONTENT --------------------- */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    padding: 2vh;
+}
+
+.problematica,
+.solucion {
+    flex: 1 1 45%;
+    background: linear-gradient(180deg, #0f0f77 35%, #0c5fdd 100%);
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 70vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+}
+
+.info {
+    flex: 1;
+    overflow: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+/* --------------------- VIDEO SECTION --------------------- */
+
+.videoSolucion {
+    padding: 2vh;
+    text-align: center;
+}
+
+.videoSolucion h1 {
+    margin-bottom: 2vh;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0 2vh;
+}
+
+.video-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Mantiene proporción del video */
+    height: auto;
+    border: 8px solid #1f1f1f;
+    border-radius: 1vh;
+}
+
+/* --------------------- DIVISION SECTION --------------------- */
+
+.division {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    padding: 2vh;
+}
+
+.izquierda,
+.derecha {
+    flex: 1 1 45%;
+    min-height: 70vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.subdivisionIzOne,
+.subdivisionIzTwo,
+.subdivisionIzThree,
+.subdivisionDerOne,
+.subdivisionDerTwo,
+.subdivisionDerThree {
+    flex: 1;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.2); /* opcional visual */
+    border-radius: 10px;
+    min-height: 100px;
+    height: auto;
+    padding-top: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fragVideo{
+    min-width: 90vh;
+    min-height: 50vh;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* --------------------- RESPONSIVE --------------------- */
+
+@media (max-width: 768px) {
+    .problematica,
+    .solucion,
+    .izquierda,
+    .derecha {
+        min-height: auto;
+    }
+    
+    .subdivisionIzOne,
+    .subdivisionIzTwo,
+    .subdivisionIzThree,
+    .subdivisionDerOne,
+    .subdivisionDerTwo,
+    .subdivisionDerThree {
+        min-height: 100px;
+        flex: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container iframe {
+        height: 40vh;
+    }
+
+    .problematica,
+    .solucion {
+        height: auto;
+    }
+
+    .division {
+        flex-direction: column;
+    }
+
+    .izquierda,
+    .derecha {
+        height: auto;
+    }
+}
+
+/* --------------------- SECTION SPACING --------------------- */
+
+section {
+    margin-bottom: 3vh;
+}

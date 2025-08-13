@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Likes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      margin: 40px;
+    }
+
+    .card {
+      border: 2px solid black;
+      padding: 16px;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+
+    .user {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .likes {
+      display: inline-block;
+      margin: 0 12px;
+    }
+
+    .like-button {
+      background-color: yellow;
+      border: 2px solid black;
+      padding: 4px 12px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .note {
+      background-color: #fef3a3;
+      padding: 12px;
+      border-left: 5px solid red;
+      width: 240px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="user">Some User</div>
+    <span class="likes" id="likeCount">3 like(s)</span>
+    <button class="like-button" onclick="incrementLikes()">Like</button>
+    <p>This is some filler text, it can say anything we like</p>
+  </div>
+
+  <div class="note">
+    Each time we click the "Like" button it should increase the number of likes by "1"
+  </div>
+
+  <script>
+    let count = 3;
+
+    function incrementLikes() {
+      count++;
+      document.getElementById("likeCount").textContent = `${count} like(s)`;
+    }
+  </script>
+
+</body>
+</html>
