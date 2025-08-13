@@ -144,6 +144,7 @@ h1, h2, h3 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     min-width: 300px;
+    display: flex;
 }
 
 .solution-grid {
@@ -227,4 +228,8 @@ h1, h2, h3 {
         flex-direction: column;
         text-align: center;
     }
+}
+.ods{
+    width: 120px;
+    margin-right: 20px;
 }
