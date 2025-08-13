@@ -160,9 +160,10 @@ h1, h2, h3 {
 }
 
 .solution-item img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     border-radius: 10px;
+    margin-left: 10px;
 }
 
 .video-container-full, .video-gallery-grid {
