@@ -3,14 +3,20 @@ console.log("page loaded...");
 
 function liked(element) {
     const span = element.querySelector("span");
-    let like =
+    let like = parseInt(span.innerText);
+    like++;
+    span.innerText=like;
 }
 
 
 function login(element) {
-    if(element.innerText)
+    if(element.innerText =="login"){
+        element.innerText ="logout";
+    } else {
+        element.innerText ="login";
     }
+}
 
-function hide(element) {
-    
+function hide(el) {
+    el.remove();
 }
