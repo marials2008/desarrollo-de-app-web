@@ -11,18 +11,21 @@ body {
 
 
 .nav-container {
-    margin:0 auto;
-    max-width: 62.5rem; /* equivalente a 1000px */
-    width: 100%;
-}
-
-.top {
-    background-color: #333333;
-    height: 60px;
-    padding: 20px;
+    margin: 0 auto;
+    max-width: 62.5rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
+    border-top-style:solid;
+    border-top:5px #9900ff;  
+    background-color: #333333;
+    height: 80px;
+}
+
+
+
+.top {
+    color:#f3f3f3;
 }
 
 
@@ -40,4 +43,34 @@ body {
     box-shadow: 4px 4px #000;
     cursor: pointer;
     background-color: #9900ff; 
+}  
+
+.user-name{
+    color:#9900ff;
+}
+
+.flex-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.col-l {
+    flex: 3;
+}
+
+.col-r {
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
