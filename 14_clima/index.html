@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="/14_clima/static/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">DojoWeather</h1>
+        <div class="nav-links">
+            <a href="#" class="active">Burbank</a>
+            <a href="#">Chicago</a>
+            <a href="#">Dallas</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="header-main">
+            <h2>San Jose</h2>
+            <div class="temp-selector">
+                <span>show temperature in </span>
+                <select id="tempUnit" onchange="convertTemperatures(this)">
+                    <option value="C" selected>°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="forecast-cards">
+            <div class="card">
+                <h3>Today</h3>
+                <img src="/14_clima/resource/img/some_rain.png" alt="Rain icon" class="weather-icon">
+                <p>some rain</p>
+                <div class="temps">
+                    <span class="high-temp">24°<span class="unit">C</span></span>
+                    <span class="low-temp">18°<span class="unit">C</span></span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Tomorrow</h3>
+                <img src="/14_clima/resource/img/some_sun.png" alt="Sun icon" class="weather-icon">
+                <p>some sun</p>
+                <div class="temps">
+                    <span class="high-temp">27°<span class="unit">C</span></span>
+                    <span class="low-temp">19°<span class="unit">C</span></span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Friday</h3>
+                <img src="/14_clima/resource/img/some_clouds.png" alt="Clouds icon" class="weather-icon">
+                <p>some clouds</p>
+                <div class="temps">
+                    <span class="high-temp">21°<span class="unit">C</span></span>
+                    <span class="low-temp">16°<span class="unit">C</span></span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Saturday</h3>
+                <img src="/14_clima/resource/img/some_sun.png" alt="Sun icon" class="weather-icon">
+                <p>some sun</p>
+                <div class="temps">
+                    <span class="high-temp">26°<span class="unit">C</span></span>
+                    <span class="low-temp">21°<span class="unit">C</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="cookie-banner" id="cookieBanner">
+            <img src="/14_clima/resource/img/cookie.png" alt="Cookie icon" class="cookie-icon">
+            <p>
+                <strong>Stop! Cookie time</strong><br>
+                We use cookies (badly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a>
+            </p>
+            <button onclick="acceptCookies()">I Accept</button>
+        </div>
+    </div>
+    <div class="modal" id="loadingModal">
+        <div class="modal-content">
+            <p>This page says</p>
+            <h3>Loading weather report...</h3>
+            <button onclick="closeModal()">OK</button>
+        </div>
+    </div>
+    
+    <script src="/14_clima/static/js/script.js"></script>
+</body>
+</html>
