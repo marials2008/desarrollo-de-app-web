@@ -1,0 +1,98 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Comic Sans MS";
+}
+
+/*header*/
+.top{
+    justify-items: center;
+}
+
+.search{
+    height: 30px;
+    width: 500px;
+}
+
+.btn {
+    background-color: #9500f8;
+    width: 70px;
+    padding: 5px;
+    color: #fff;
+    border: 4px black;
+    border-style: solid;
+    box-shadow: 4px 5px 0px 2px black;
+}
+
+.nav-container{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333333;
+    border-top: #9500f8 4px;
+    border-top-style: solid;
+    color: white;
+}
+/*body*/
+body{
+    justify-items: center;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin-top: 20px;
+}
+
+
+
+.col-l {
+    margin-left: -14px;
+    flex: 2;
+}
+
+.col-r {
+    flex: 2;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    flex: 1;
+    margin-left: 5px;
+}
+
+.avatar-s {
+    border-radius: 45px;
+}
+
+.sub{
+    width: 90px;
+    height: 30px;
+    padding: 0px;
+}
+
+.vid-s{
+    width: 200px;
+    margin-right: 10px;
+}
+
+.video-small {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.placeholder{
+    display: flex;
+}
+
+
