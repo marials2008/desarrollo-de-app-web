@@ -70,7 +70,8 @@ body{
 }
 
 .avatar-s {
-    border-radius: 45px;
+    border-radius: 50%;
+    width: 40px;
 }
 
 .sub{

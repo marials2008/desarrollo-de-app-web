@@ -1,5 +1,5 @@
 const video = '<video width="720" height="400" controls autoplay src="resources/videos/PREMEDITATED (Full Combo) - FNF Myths of Yamaha.mp4" class="video" id="main"></video>'
-const video2 = '<video width="720" height="400" controls autoplay src="resources/videos/SELF-PACED (feat. @DJAwesomeYT) - The Pace Collection OST.mp4" class="video" id="main"></video>'
+const video2 = '<iframe width="560" height="315" src="https://www.youtube.com/embed/KYEJ4jh1kW8?si=kQQD7e3PkhiMhqfC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
 const video3 = '<video width="720" height="400" controls autoplay src="resources/videos/[WotG] ENNWAY ft. Heart Plus Up! - TWISTED GARDEN (Nameless Deity).mp4" class="video" id="main"></video>'
 const video4= '<video width="720" height="400" controls autoplay src="resources/videos/Sans and Papyrus Song (Remastered) - An Undertale Rap by JT Music  To The Bone.mp4" class="video" id="main"></video>'
 const video5 = '<video width="720" height="400" controls autoplay src="resources/videos/HYPERLINK [Deltarune Spamton Animation].mp4" class="video"></video>'
@@ -31,7 +31,7 @@ function hover1(element) {
     let span = element.querySelector('span');
     img.remove();
     span.remove();
-    document.getElementById('cont').innerHTML = '<video width="150" height="115" autoplay src="resources/videos/PREMEDITATED (Full Combo) - FNF Myths of Yamaha.mp4" class="vid-s"></video> <span class="video-title">PREMEDITATED: Myths of Yamaha</span>';
+    document.getElementById('cont').innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/KYEJ4jh1kW8?si=kQQD7e3PkhiMhqfC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
 }
 
 function out1(element) {
@@ -39,7 +39,7 @@ function out1(element) {
     let span = element.querySelector('span');
     video.remove();
     span.remove();
-    element.innerHTML = '<img src="resources/img/ZWzXbVEC8fU_1280x720.jpg" class="vid-s" id="video"> <span class="video-title">PREMEDITATED: Myths of Yamaha</span>';
+    element.innerHTML = '<img src="resource/img/KYEJ4jh1kW8_1280x720.jpg" class="vid-s" id="video"> <span class="video-title">PREMEDITATED: Myths of Yamaha</span>';
 }
 
 function hover2(element) {
